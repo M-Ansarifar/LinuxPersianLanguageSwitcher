@@ -1,9 +1,5 @@
 # Linux persian languge changer
-import os, time
-
-print ("Initializing...\n")
-# Sleep
-time.sleep(1.8)
-os.system("setxkbmap -layout us,ir")
-os.system("setxkbmap -option 'grp:alt_shift_toggle'")
+import os
+os.system("setxkbmap -layout us,ir") # You can use any language's you want, for example: us,uk (United States, United Kingdom)
+os.system("setxkbmap -option 'grp:alt_shift_toggle'") # This is the shortcut, You can use anything.
 print ("Language set to (US, FA) - Toggle with Shift + Alt")
